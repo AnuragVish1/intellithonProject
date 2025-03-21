@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
+
 :root {
+  
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
@@ -72,7 +76,24 @@
   --sidebar-ring: oklch(0.552 0.016 285.938);
 }
 
+
+
+@theme {
+  --font-Inter: 'Inter', 'sans-serif';
+  --color-custom-50: #faf9f5;
+  --color-custom-100: #f4ded7;
+  --color-custom-200: #e9c1b4;
+  --color-custom-300: #dea08c;
+  --color-custom-400: #d48368;
+  --color-custom-500: #c96442;
+  --color-custom-600: #a74d30;
+  --color-custom-700: #7b3923;
+  --color-custom-800: #532718;
+  --color-custom-900: #28120b;
+  --color-custom-950: #140906;
+}
 @theme inline {
+  
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);

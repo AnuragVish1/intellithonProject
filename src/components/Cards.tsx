@@ -7,14 +7,15 @@ const Cards = ({url}: ImageUrlProp) => {
     console.log(url)
   return (
     <>
-      <div className="h-[15.5rem] w-full border-2 flex rounded-2xl p-3 gap-5">
+      <div className="h-[15.5rem] w-full border-2 flex rounded-2xl p-3 gap-5 bg-[#f0dbdb]">
         <div className=" w-[28rem]  flex justify-center items-center">
           <img src={url} alt="" className=" object-cover h-full rounded-[0.5rem]" />
 
         </div>
         <div className="h-full flex flex-col justify-between">
           <div className="">
-            <p className="text-[1.25rem]">
+            <h1 className=" text-2xl">Company 1</h1>
+            <p className="text-[1.1rem] pt-2 pb-1">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or randomised words{" "}
